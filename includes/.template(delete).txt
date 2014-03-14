@@ -1,0 +1,142 @@
+function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+
+
+
+document.writeln("<!DOCTYPE html>");
+document.writeln("<html>");
+document.writeln("<head>");
+document.writeln("<title> Alvaro Ferran Cifuentes</title>");
+document.writeln("<style type='text/css'>");
+
+document.writeln("div#topdiv {");
+document.writeln("position:fixed;");
+document.writeln("top:0px;");
+document.writeln("left:0px;");
+document.writeln("width:100%;");
+document.writeln("height:55px;");
+document.writeln("color:#CCC;");
+document.writeln("background:#EEEEEE;");
+document.writeln("z-index: 10;");
+document.writeln("}");
+
+document.writeln("div#left {");
+document.writeln("position:fixed;");
+document.writeln("left:0px;");
+document.writeln("top:55px;");
+document.writeln("width:160px;");
+document.writeln("height:100%;");
+document.writeln("color:#0E0D28;");
+document.writeln("background:#EEEEEE;");
+document.writeln("}");
+
+document.writeln("div#center {");
+document.writeln("position:absolute;");
+document.writeln("left:160px;");
+document.writeln("top:80px;");
+document.writeln("float: left;");
+document.writeln("width: -moz-calc(100% - 180px);");
+document.writeln("width: -webkit-calc(100% - 180px);");
+document.writeln("width: -o-calc(100% - 180px);");
+document.writeln("width: calc(100% - 180px);");
+document.writeln("height:100%;");
+document.writeln("color:#0E0D28;");
+document.writeln("background:#FFF;");
+document.writeln("z-index: -10;");
+document.writeln("}");
+
+document.writeln("div#name {");
+document.writeln("position:fixed;");
+document.writeln("text-align:center;");
+document.writeln("left:160px;");
+document.writeln("top:55px;");
+document.writeln("width:100%;");
+document.writeln("height:40px;");
+document.writeln("color:#0E0D28;");
+document.writeln("background:#A6C5F3;");
+document.writeln("z-index:1;");
+document.writeln("}");
+
+document.writeln("div#rectangle {");
+document.writeln("position:relative;");
+document.writeln("width:100%;");
+document.writeln("height:6px;");
+document.writeln("background:#DBD9D9;");
+document.writeln("}");
+/*
+document.writeln("div#strip {");
+document.writeln("position:absolute;");
+document.writeln("left:170px;");
+document.writeln("top:100px;");
+document.writeln("width:87%;");
+document.writeln("}");
+document.writeln(".square{");
+document.writeln("position:relative;");
+document.writeln("margin-bottom:5px;");
+document.writeln("border-style:ridge;");
+document.writeln("z-index: -10;");
+document.writeln("height:40px;");
+document.writeln("}");*/
+
+document.writeln("</style>");
+document.writeln("</head>");
+
+
+
+document.writeln("<body bgcolor='#FFF'>");
+
+document.writeln("<div id='topdiv'>");
+ document.write('<scr'+'ipt type="text/javascript" src="toggleVisibility.js" ></scr'+'ipt>'); 
+//document.writeln("<scr"+"ipt type='text/javascript' src='toggleVisibility.js'></scr"+"ipt>");
+//loadjscssfile("toggleVisibility.js", "js");
+document.writeln("<a onclick='toggle_visibility(&#34;left&#34;);'><img align='left' src='icons/menu.png' width='40' height='40' /></a>");
+//document.writeln("<p align='right'> <font size='6'>Search&nbsp;&nbsp;&nbsp;&nbsp;</font></p>");
+document.writeln("</div>");
+
+document.writeln("<div id='left'>");
+//document.writeln("<p>");
+/*document.writeln("<ul id='menu'>");
+document.writeln("<li><a href='#'>Menu</a>");
+document.writeln("<ul class='sub-menu'>");
+document.writeln("<li>");
+document.writeln("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  href='aboutMe.html' target='_self'><font color='#002366'>About Me</font> </a>  ");
+document.writeln("<div id='rectangle' top:40px></div>");
+document.writeln("</li>");
+document.writeln("<li>");
+document.writeln("<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  href='portfolio.html' target='_self'><font color='#002366'>Portfolio</font> </a> <br> <br>");
+document.writeln("<div id='rectangle' top:40px></div>");
+document.writeln("</li>");
+document.writeln("<li>");
+document.writeln("<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  href='software.html' target='_self'><font color='#002366'>Software</font> </a> <br> <br>");
+document.writeln("<div id='rectangle' top:40px></div>");
+document.writeln("</li>");
+document.writeln("<li>");
+document.writeln("<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  href='contact.html' target='_self'><font color='#002366'>Contact</font> </a> <br> <br>");
+document.writeln("<div id='rectangle' top:40px></div>");
+document.writeln("</li>");
+document.writeln("<li>");
+document.writeln("<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  href='links.html' target='_self'><font color='#002366'>Links</font> </a> <br> <br>");
+document.writeln("</li>");
+document.writeln("</ul>");
+document.writeln("</li>");
+document.writeln("</ul>");*/
+
+document.writeln("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  href='aboutMe.html' target='_self'><font color='#002366'>About Me</font> </a> <br>&nbsp; ");
+document.writeln("<div id='rectangle' top:40px></div>");
+document.writeln("<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  href='portfolio.html' target='_self'><font color='#002366'>Portfolio</font> </a> <br> <br>");
+document.writeln("<div id='rectangle' top:40px></div>");
+document.writeln("<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  href='software.html' target='_self'><font color='#002366'>Software</font> </a> <br> <br>");
+document.writeln("<div id='rectangle' top:40px></div>");
+document.writeln("<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  href='contact.html' target='_self'><font color='#002366'>Contact</font> </a> <br> <br>");
+document.writeln("<div id='rectangle' top:40px></div>");
+document.writeln("<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  href='links.html' target='_self'><font color='#002366'>Links</font> </a> <br> <br>");
+document.writeln("</div>");
+
+
+
+

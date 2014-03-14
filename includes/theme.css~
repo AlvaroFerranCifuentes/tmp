@@ -1,0 +1,162 @@
+@font-face{ 
+    font-family: Sansation; 
+    src: url('../pages/fonts/sansation-EOT/Sansation-Regular.eot'); /* For IE */ 
+    src: url("../pages/fonts/sansation-TTF/Sansation-Regular.ttf"); /* For non-IE */ 
+}  
+div{
+font-family: 'Sansation';
+color:#1E198B;
+}
+
+
+A:link {text-decoration: none;
+color:#1E198B; }
+A:visited {text-decoration: none;
+			color:#1E198B; }
+A:active {text-decoration: none;}
+/*A:hover {text-decoration: underline overline; }*/
+
+
+div#topdiv {
+position:fixed;
+top:0px;
+left:0px;
+width:100%;
+height:40px;
+color:#CCC;
+background:#EEEEEE;
+z-index: 10;
+text-align:right;
+}
+
+
+
+div#left {
+position:fixed;
+left:0px;
+top:40px;
+width:160px;
+height:100%;
+color:#0E0D28;
+background:#EEEEEE;
+}
+
+
+
+div#center {
+position:absolute;
+left:160px;
+top:60px;
+width: -moz-calc(100% - 190px);
+width: -webkit-calc(100% - 190px);
+width: -o-calc(100% - 190px);
+width: calc(100% - 190px);
+height:100%;
+color:#0E0D28;
+padding:1%;
+background:#FFF;
+z-index: -10;
+}
+
+
+
+div#name {
+position:fixed;
+text-align:center;
+left:160px;
+top:40px;
+float: left;
+width: -moz-calc(100% - 160px);
+width: -webkit-calc(100% - 160px);
+width: -o-calc(100% - 160px);
+width: calc(100% - 160px);
+height:35px;
+color:#0E0D28;
+background:#A6C5F3;
+z-index:1;
+}
+
+
+
+div#rectangle {
+position:relative;
+width:90%;
+height:6px;
+background:#DBD9D9;
+}
+
+
+
+div#strip {
+position:absolute;
+left:170px;
+top:100px;
+float: left;
+width: -moz-calc(100% - 180px);
+width: -webkit-calc(100% - 180px);
+width: -o-calc(100% - 180px);
+width: calc(100% - 180px);
+
+}
+.square{
+size:4;
+position:relative;
+text-align:center;
+border-style:ridge;
+border-color:#000;
+margin-bottom:5px;
+height:30px;
+background:#FFF;
+padding-top:10px;
+}
+.square:hover {
+   background:#C3D7F3;
+}
+
+button#back{
+margin-top:8px;
+margin-left:8px;
+padding-left:8px;
+float: left;  
+background: url(../icons/back.png);
+border-style:none;
+}
+
+
+
+
+
+
+/*Initialize*/
+/*ul#menu, ul#menu ul.sub-menu {
+    padding:0;
+    margin: 0;
+}
+ul#menu li, ul#menu ul.sub-menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+/*Link Appearance*/
+/*ul#menu li a, ul#menu li ul.sub-menu li a {
+    text-decoration: none;
+    color: #fff;
+    background: #666;
+    padding: 5px;
+    display:inline-block;
+}
+/*Make the parent of sub-menu relative*/
+/*ul#menu li {
+    position: relative;
+}
+/*sub menu*/
+/*ul#menu li ul.sub-menu {
+    display:none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100px;
+}
+ul#menu li:hover ul.sub-menu {
+    display:block;
+}*/
