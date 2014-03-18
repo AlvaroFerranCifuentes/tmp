@@ -7,7 +7,9 @@ div{
 font-family: 'Sansation';
 color:#1E198B;
 }
-
+input{
+font-family: 'Sansation';
+}
 
 A:link {text-decoration: none;
 color:#1E198B; }
@@ -16,6 +18,8 @@ A:visited {text-decoration: none;
 A:active {text-decoration: none;}
 /*A:hover {text-decoration: underline overline; }*/
 
+div#layout{
+z-index=0;}
 
 div#topdiv {
 position:fixed;
@@ -55,7 +59,7 @@ height:100%;
 color:#0E0D28;
 padding:1%;
 background:#FFF;
-z-index: -10;
+z-index: 1;
 }
 
 
@@ -73,7 +77,8 @@ width: calc(100% - 160px);
 height:35px;
 color:#0E0D28;
 background:#A6C5F3;
-z-index:1;
+z-index:5;
+border-radius: 5px;
 }
 
 
@@ -88,15 +93,15 @@ background:#DBD9D9;
 
 
 div#strip {
-position:absolute;
+position:relative;
 left:170px;
 top:100px;
 float: left;
-width: -moz-calc(100% - 180px);
+width: -moz-calc(80% - 180px);
 width: -webkit-calc(100% - 180px);
 width: -o-calc(100% - 180px);
 width: calc(100% - 180px);
-
+z-index: 3;
 }
 .square{
 size:4;
@@ -108,6 +113,7 @@ margin-bottom:5px;
 height:30px;
 background:#FFF;
 padding-top:10px;
+border-radius: 8px;
 }
 .square:hover {
    background:#C3D7F3;

@@ -1,0 +1,95 @@
+
+<!-- TWO STEPS TO INSTALL SITE SEARCH:
+
+  1.  Copy the coding into the HEAD of your HTML document
+  2.  Add the last code into the BODY of your HTML document  -->
+
+<!-- STEP ONE: Paste this code into the HEAD of your HTML document  -->
+
+<HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  Dion (biab@iinet.net.au) -->
+<!-- Web Site:  http://www.iinet.net.au/~biab -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://www.javascriptsource.com -->
+
+<!-- Begin
+var item = new Array();
+
+/* Here is where all the magic happens.  
+    Just enter as many additional pages that
+    that you want to search, then fill in the
+    additional listings for each page.
+*/
+
+// "Page Name","path","Page Title","Many,Key,Words","Descriptive Comments"
+
+c=0; item[c]=new Array("index.html","","DemoSite","a,index,main,start,home,front,palabra,b","Demonstration search engine data about an imagined but probable internet site.");
+c++; item[c]=new Array("about.htm","","About Me","a,about,author,contact,email,who","Contact details and general information about the creator of the site and what the site is about.");
+c++; item[c]=new Array("links.htm","","Links page","a,links,more,where,similar,friends","Links to my favourite sites which I find interesting. Other friends sites which have similar interests to my own.");
+c++; item[c]=new Array("main.htm","main/","Main Page","a,content,main,focus","The main part of my site which contains what you have come to see. Lots of stuff like that and more great things. All in a sub directory.");
+c++; item[c]=new Array("logo.jpg","main/images/","Link Logo","a,link,image,logo,graphic","The logo.jpg is just a small image which you can place on your site as a link to me. It's in a second level subdirectory.");
+c++; item[c]=new Array("contact.html","pages/", "Contact Page", "contact, email, mail", "Página para enviarme correo y/o contactar conmigo.");
+c++; item[c]=new Array("TFG.html","pages/", "TFG", "arduino, android, raspberry, raspberry pi, robot, manipulator, mobile, remote, streaming, sockets, web cam, webcam", "");
+
+
+page="<html><head><title>Search Results</title></head><body bgcolor='white'><center><table border=0 cellspacing=10 width=80%>";
+
+
+function search(frm) {
+	//win = window.open("","","scrollbars");
+	document.write(page);
+	txt = frm.srchval.value.split(" ");
+	fnd = new Array(); 
+	total=0;
+	for (i = 0; i < item.length; i++) {
+		fnd[i] = 0;
+		order = new Array(0, 4, 2, 3);
+//		order = new Array(4);
+//		alert(order);
+		for (j = 0; j < order.length; j++)
+			for (k = 0; k < txt.length; k++)
+				if (item[i][order[j]].toLowerCase().indexOf(txt[k]) > -1 && txt[k] != "")
+					fnd[i] += (j+1);
+	}
+	for (i = 0; i < fnd.length; i++) {
+		w = -1;
+		for (j = 0; j < fnd.length; j++)
+			if (fnd[j] > 0) { 
+				w = j; 
+			};
+		if (w > -1) 
+			total += show(w);
+		fnd[w] = 0;
+	}
+	document.write("</table><br>Total found: "+total+"<br></body></html>");
+	//win.document.close();
+}
+function show(which) {
+	link = item[which][1] + item[which][0]; 
+	line = "<tr><td><a href='"+link+"'>"+item[which][2]+"</a><br>";
+	line +=/* item[which][4] +*/"</td></tr>";
+	document.write(line);
+	return 1;
+}
+//  End -->
+</script>
+</HEAD>
+
+<!-- STEP TWO: Copy this code into the BODY of your HTML document  -->
+
+<BODY>
+
+<center>
+
+<form method=get action="javascript:void(0)" onsubmit="search(this); return false;">
+<tr><td><input type=text name=srchval value=""><input type=submit value="Search"></td></tr>
+</form>
+
+</center>
+
+
+
+<!-- Script Size:  3.16 KB -->
