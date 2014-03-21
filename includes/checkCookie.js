@@ -1,4 +1,4 @@
-var e = document.getElementById('left');
+/*var e = document.getElementById('left');
 var e2 = document.getElementById('center');
 var e3 = document.getElementById('name');
 var e4 = document.getElementById('strip');

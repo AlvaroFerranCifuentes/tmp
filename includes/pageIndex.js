@@ -1,4 +1,6 @@
+
 // "Page Name","path","Page Title","Many,Key,Words","Descriptive Comments"
+var item = new Array();
 
 c=0; item[c]=new Array("aboutMe.html","../pages/","Personal information","about,author,information,alvaro,","Personal information about me");
 
@@ -8,6 +10,17 @@ c++; item[c]=new Array("portfolio.html","../pages/", "Portfolio", "proyects, por
 
 c++; item[c]=new Array("software.html","../pages/", "Skills","software, programs, technologies, skills", "");
 
-c++; item[c]=new Array("TFG.html","../pages/", "TFG", "arduino, android, raspberry pi, robot, manipulator, mobile, remote, streaming, sockets, web cam, webcam", "");
+c++; item[c]=new Array("TFG.html","../pages/", "TFG", "about,arduino, android, raspberry pi, robot, manipulator, mobile, remote, streaming, sockets, web cam, webcam", "");
+
+
+
+
+
+
+
+
+
+
+
 
 

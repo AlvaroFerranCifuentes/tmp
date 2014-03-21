@@ -2,10 +2,10 @@ document.writeln("<!DOCTYPE html>"); //title needs to be out of js script -> goo
 document.writeln("<html>");
 document.writeln("<head>");
 document.writeln("<title>Alvaro Ferran Cifuentes - A personal portfolio</title>");
-document.writeln("<link rel='shortcut icon' href='../icons/fotoperfil.png' type='image/png'>");
+document.writeln("<link rel='shortcut icon' href='images/fotoperfil.png' type='image/png'>");
 
 
-
+/*
 function setCookie( name, value, timeout){
 	var d = new Date();
 	d.setTime(d.getTime()+(timeout*1000));

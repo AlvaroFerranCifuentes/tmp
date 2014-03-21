@@ -1,7 +1,7 @@
 @font-face{ 
     font-family: Sansation; 
-    src: url('../pages/fonts/sansation-EOT/Sansation-Regular.eot'); /* For IE */ 
-    src: url("../pages/fonts/sansation-TTF/Sansation-Regular.ttf"); /* For non-IE */ 
+    src: url('../fonts/sansation-EOT/Sansation-Regular.eot'); /* For IE */ 
+    src: url("../fonts/sansation-TTF/Sansation-Regular.ttf"); /* For non-IE */ 
 }  
 div{
 font-family: 'Sansation';
@@ -34,8 +34,17 @@ text-align:right;
 }
 
 
+div#menuImg{
+position:fixed;
+top:1px;
+left:2px;
+width:50px;
+height:40px;
+z-index:11;
+}
 
 div#left {
+display:none;
 position:fixed;
 left:0px;
 top:40px;
@@ -43,21 +52,17 @@ width:160px;
 height:100%;
 color:#0E0D28;
 background:#EEEEEE;
+z-index:15;
 }
 
 
 
 div#center {
 position:absolute;
-left:160px;
 top:60px;
-width: -moz-calc(100% - 190px);
-width: -webkit-calc(100% - 190px);
-width: -o-calc(100% - 190px);
-width: calc(100% - 190px);
-height:100%;
+width:95%;
+height:auto;
 color:#0E0D28;
-padding:1%;
 background:#FFF;
 z-index: 1;
 }
@@ -66,19 +71,14 @@ z-index: 1;
 
 div#name {
 position:fixed;
+left:0px;
 text-align:center;
-left:160px;
 top:40px;
-float: left;
-width: -moz-calc(100% - 160px);
-width: -webkit-calc(100% - 160px);
-width: -o-calc(100% - 160px);
-width: calc(100% - 160px);
-height:35px;
+width:100%;
+height:34px;
 color:#0E0D28;
 background:#A6C5F3;
 z-index:5;
-border-radius: 5px;
 }
 
 
@@ -94,14 +94,8 @@ background:#DBD9D9;
 
 div#strip {
 position:relative;
-left:170px;
-top:100px;
-float: left;
-width: -moz-calc(80% - 180px);
-width: -webkit-calc(100% - 180px);
-width: -o-calc(100% - 180px);
-width: calc(100% - 180px);
-z-index: 3;
+top:70px;
+width:100%;
 }
 .square{
 size:4;
@@ -114,6 +108,7 @@ height:30px;
 background:#FFF;
 padding-top:10px;
 border-radius: 8px;
+z-index: 3;
 }
 .square:hover {
    background:#C3D7F3;
@@ -124,7 +119,7 @@ margin-top:8px;
 margin-left:8px;
 padding-left:8px;
 float: left;  
-background: url(../icons/back.png);
+background: url(../images/back.png);
 border-style:none;
 }
 
